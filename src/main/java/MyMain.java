@@ -1,68 +1,71 @@
-import java.util.Scanner;
-
 public class MyMain {
-    // Write a method that asks the user to input a double between 0.0 and 1000000.0
-    // Your method should keep asking them until they type in a valid value
-    // The method returns the final double they type in
-
-    // scan.nextDouble() might be useful here
-    public static double inputDouble() {
-        Scanner scan = new Scanner(System.in);
-        // REPLACE THIS WITH YOUR CODE
-
-        return -1.0;
+    // Warm-up: This method returns true if the input num is
+    // divisible by 4, and false otherwise
+    // Ex. divisibleByFour(16) -> true
+    //     divisibleByFour(5) -> false
+    public static boolean divisibleByFour(int num) {
+        // REPLACE WITH YOUR CODE HERE
+        return false;
     }
 
-    // Takes a double money as input and returns the number of quarters that we
-    // can return in change
-    // You should use a while loop!
-    public static int numQuarters(double money) {
+    // This method prints every number from 1 up to and including the input biggest
+    // There should be **5 numbers** printed per line, such as:
+    // 1 2 3 4 5
+    // 6 7 8 9 10
+    // ...
+    public static void printNumsUpTo(int biggest) {
+        // REPLACE THIS WITH YOUR CODE
+    }
+
+    // This method is given an input x, and it adds up the sum of its digits
+    // Ex. sumDigits(61) -> 7 because 6 + 1 = 7
+    //     sumDigits(123) -> 6 because 1 + 2 + 3 = 6
+    public static int sumDigits(int x) {
         // REPLACE THIS WITH YOUR CODE
         return 0;
     }
 
-    // Takes a double money as input and returns the number of dimes that we
-    // can return in change
-    // You should use a while loop!
-    public static int numDimes(double money) {
-        // REPLACE THIS WITH YOUR CODE
-        return 0;
-    }
+    // Bonus: This method returns true if the input num is a "self-divisor",
+    // and false otherwise.
+    // A positive integer is called a "self-divisor" if the number is divisible
+    // by every one of its digits.
+    // Ex. isSelfDivisor(128) -> true because 128 is divisible by 1, 2, and 8
+    //     isSelfDivisor(26) -> false because 26 is not divisible by 26
 
-    // Takes a double money as input and returns the number of nickels that we
-    // can return in change
-    // You should use a while loop!
-    public static int numNickels(double money) {
+    // Note that 0 is not considered to be a divisor of any number, so any number containing a 0
+    // digit is NOT a self-divisor.
+    public static boolean isSelfDivisor(int num) {
         // REPLACE THIS WITH YOUR CODE
-        return 0;
-    }
-
-    // Takes a double money as input and returns the number of pennies that we
-    // can return in change
-    // You should use a while loop!
-    public static int numPennies(double money) {
-        // REPLACE THIS WITH YOUR CODE
-        return 0;
+        return false;
     }
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        System.out.println("divisibleByFour Tests:");
+        System.out.println(divisibleByFour(128)); // true
+        System.out.println(divisibleByFour(14)); // false
+        System.out.println(divisibleByFour(12)); // true
+        System.out.println(divisibleByFour(3)); // false
 
-        // You should test inputDouble yourself!
-        double d = inputDouble();
+        System.out.println();
+        System.out.println("printNumsUpTo Tests:");
+        printNumsUpTo(20);
+        // 1 2 3 4 5
+        // 6 7 8 9 10
+        // 11 12 13 14 15
+        // 16 17 18 19 20
 
-        // Some code to test numQuarters
-        System.out.println("\nnumQuarters tests:");
-        System.out.println("1.25 in quarters would be: " + numQuarters(1.25) + " quarters."); // 5
-        System.out.println("10.55 in quarters would be: " + numQuarters(10.55) + " quarters."); // 42
-        System.out.println("1000000.20 in quarters would be: " + numQuarters(1000000.20) + " quarters."); //4000000
+        System.out.println();
+        System.out.println("sumDigits Tests:");
+        System.out.println(sumDigits(61)); // 7 because 6 + 1 = 7
+        System.out.println(sumDigits(123)); // 6 because 1 + 2 + 3 = 6
+        System.out.println(sumDigits(4096)); // 19
 
-        // Some code to test numDimes
-        System.out.println("\nnumDimes tests:");
-        System.out.println("1.20 in dimes would be: " + numDimes(1.20) + " dimes."); // 12
-        System.out.println("120.13 in dimes would be: " + numDimes(120.13) + " dimes."); //1201
-        System.out.println("150.25 in dimes would be: " + numDimes(150.25) + " dimes."); //1502
-
-        scan.close();
+        System.out.println();
+        System.out.println("isSelfDivisor Tests:");
+        System.out.println(isSelfDivisor(128)); // true
+        System.out.println(isSelfDivisor(36)); // true
+        System.out.println(isSelfDivisor(144)); // true
+        System.out.println(isSelfDivisor(4096)); // false
+        System.out.println(isSelfDivisor(26)); // false
     }
 }
