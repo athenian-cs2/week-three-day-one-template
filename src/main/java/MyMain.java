@@ -67,5 +67,6 @@ public class MyMain {
         System.out.println(isSelfDivisor(144)); // true
         System.out.println(isSelfDivisor(4096)); // false
         System.out.println(isSelfDivisor(26)); // false
+        System.out.println(isSelfDivisor(10)); // false
     }
 }
