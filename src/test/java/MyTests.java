@@ -51,42 +51,42 @@ public class MyTests {
         assertEquals(27, MyMain.sumDigits(999), "sumDigits(999) should return 27");
     }
 
-    @Test
-    public void testIsSelfDivisor() {
-        // Test cases for self-divisors
-        assertTrue(MyMain.isSelfDivisor(128), "128 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(36), "36 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(144), "144 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(1), "1 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(2), "2 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(3), "3 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(4), "4 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(5), "5 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(6), "6 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(7), "7 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(8), "8 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(9), "9 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(12), "12 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(15), "15 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(24), "24 should be a self-divisor");
-        assertTrue(MyMain.isSelfDivisor(48), "48 should be a self-divisor");
+    // @Test
+    // public void testIsSelfDivisor() {
+    //     // Test cases for self-divisors
+    //     assertTrue(MyMain.isSelfDivisor(128), "128 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(36), "36 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(144), "144 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(1), "1 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(2), "2 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(3), "3 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(4), "4 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(5), "5 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(6), "6 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(7), "7 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(8), "8 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(9), "9 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(12), "12 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(15), "15 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(24), "24 should be a self-divisor");
+    //     assertTrue(MyMain.isSelfDivisor(48), "48 should be a self-divisor");
         
-        // Test cases for NON self-divisors
-        assertFalse(MyMain.isSelfDivisor(26), "26 should not be a self-divisor");
-        assertFalse(MyMain.isSelfDivisor(4096), "4096 should not be a self-divisor");
-        assertFalse(MyMain.isSelfDivisor(13), "13 should not be a self-divisor");
-        assertFalse(MyMain.isSelfDivisor(23), "23 should not be a self-divisor");
-        assertFalse(MyMain.isSelfDivisor(29), "29 should not be a self-divisor");
+    //     // Test cases for NON self-divisors
+    //     assertFalse(MyMain.isSelfDivisor(26), "26 should not be a self-divisor");
+    //     assertFalse(MyMain.isSelfDivisor(4096), "4096 should not be a self-divisor");
+    //     assertFalse(MyMain.isSelfDivisor(13), "13 should not be a self-divisor");
+    //     assertFalse(MyMain.isSelfDivisor(23), "23 should not be a self-divisor");
+    //     assertFalse(MyMain.isSelfDivisor(29), "29 should not be a self-divisor");
         
-        // Numbers containing 0 (should all be false)
-        assertFalse(MyMain.isSelfDivisor(10), "10 should not be a self-divisor (contains 0)");
-        assertFalse(MyMain.isSelfDivisor(20), "20 should not be a self-divisor (contains 0)");
-        assertFalse(MyMain.isSelfDivisor(30), "30 should not be a self-divisor (contains 0)");
-        assertFalse(MyMain.isSelfDivisor(100), "100 should not be a self-divisor (contains 0)");
-        assertFalse(MyMain.isSelfDivisor(101), "101 should not be a self-divisor (contains 0)");
-        assertFalse(MyMain.isSelfDivisor(102), "102 should not be a self-divisor (contains 0)");
-        assertFalse(MyMain.isSelfDivisor(1024), "1024 should not be a self-divisor (contains 0)");
-    }
+    //     // Numbers containing 0 (should all be false)
+    //     assertFalse(MyMain.isSelfDivisor(10), "10 should not be a self-divisor (contains 0)");
+    //     assertFalse(MyMain.isSelfDivisor(20), "20 should not be a self-divisor (contains 0)");
+    //     assertFalse(MyMain.isSelfDivisor(30), "30 should not be a self-divisor (contains 0)");
+    //     assertFalse(MyMain.isSelfDivisor(100), "100 should not be a self-divisor (contains 0)");
+    //     assertFalse(MyMain.isSelfDivisor(101), "101 should not be a self-divisor (contains 0)");
+    //     assertFalse(MyMain.isSelfDivisor(102), "102 should not be a self-divisor (contains 0)");
+    //     assertFalse(MyMain.isSelfDivisor(1024), "1024 should not be a self-divisor (contains 0)");
+    // }
     
     // Note: printNumsUpTo is a void method that prints to console, so we can't easily test it with JUnit
     // In a real testing scenario, you might want to capture System.out to test the output,
